@@ -1,1 +1,295 @@
 # ndtp-styling-assets
+
+## Description
+
+This project is a SCSS module designed to be easily integrated into external projects, such as those built with React, AngularJS, or other front-end frameworks. It provides a consistent set of global styles, mixins, and theme variables, ensuring a streamlined and maintainable design system across multiple applications.
+
+The module follows best practices for modular SCSS architecture, with a well-organized directory structure to support scalability and maintainability. Key features of the module include:
+
+Global Styles: Reusable base styles, including resets, typography, and form elements, to ensure consistency across various projects.
+Component Styles: Predefined, reusable styles for common UI elements like buttons, cards, and form controls.
+Theming: Centralized theme variables (e.g., color palette, typography settings) to maintain consistent design across projects.
+Flexibility: Ability to customize and extend styles to meet the unique needs of each project.
+Build & Bundling: Configured with Vite and Webpack for efficient building and bundling of SCSS files for both local development and production deployment.
+This project also includes a README.md file with clear setup instructions for local and production environments, contributing guidelines, and templates for pull requests and issue handling.
+
+By using this SCSS module, developers can easily integrate a consistent set of design elements into their projects, saving time and ensuring a cohesive look and feel across their web applications.
+
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Development](#development)
+- [Building the Package](#building-the-package)
+- [Publishing the Package Locally](#publishing-the-package-locally)
+- [Testing Locally](#testing-locally)
+- [Publishing the Package to Production](#publishing-the-package-to-production)
+- [Usage](#usage)
+- [Security](#security)
+
+## Installation
+
+To get started, you will need to install the dependencies for the project. This includes all the build tools for compiling SCSS and generating the final CSS.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ndtp-styling-assets.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Development
+
+In development, you can compile SCSS into CSS and run the build process using Webpack.
+
+### Running Development Build
+
+For development, you can run Webpack in `development` mode:
+
+```bash
+npm run dev
+```
+
+This will build the project and watch for changes in your SCSS files. The output will be available in the `dist` folder.
+
+### Running Production Build
+
+For production, Webpack will optimize the output (minify the CSS and JS) and place it in the `dist` folder:
+
+```bash
+npm run build
+```
+
+The final compiled CSS (`styles.css`) will be ready to be used or published.
+
+## Building the Package
+
+To build the package locally, you need to ensure that the package is ready for distribution.
+
+1. Compile the SCSS files into the final CSS file. You can do this by running:
+
+   ```bash
+   npm run build
+   ```
+
+2. Once the package is built, your `dist` folder will contain:
+   - `dist/css/styles.css` (compiled CSS)
+   - `dist/scss/main.scss` (SCSS main source file)
+
+3. Optionally, you can check the contents of the `dist` folder to verify everything is in place.
+
+## Publishing the Package Locally
+
+To test your package locally before publishing it to a public registry, follow these steps:
+
+### 1. Generate a `.tgz` File
+
+Use the following command to package your project into a `.tgz` file (tarball). This file can be used to install the package in other local projects.
+
+```bash
+npm pack
+```
+
+This will generate a `.tgz` file (e.g., `ndtp-styling-assets-1.0.0.tgz`) in your project folder.
+
+### 2. Install the Local Package
+
+Once you have the `.tgz` file, you can install it locally in another project:
+
+```bash
+npm install /path/to/ndtp-styling-assets-1.0.0.tgz
+```
+
+Replace `/path/to/ndtp-styling-assets-1.0.0.tgz` with the actual path to the generated `.tgz` file.
+
+### 3. Testing the Local Package
+
+After installing, you can import the CSS or SCSS into your project:
+
+- **Using CSS:**
+  ```html
+  <link rel="stylesheet" href="node_modules/ndtp-styling-assets/dist/css/styles.css">
+  ```
+
+- **Using SCSS:**
+  ```scss
+  @use 'node_modules/ndtp-styling-assets/dist/scss/main.scss';
+  ```
+
+Now you can test the changes and confirm that your package works as expected.
+
+## Testing Locally
+
+You can also use `npm link` to work with the package directly in development without needing to install a `.tgz` file every time.
+
+1. In your package's directory, run:
+
+   ```bash
+   npm link
+   ```
+
+2. In your test project, run:
+
+   ```bash
+   npm link ndtp-styling-assets
+   ```
+
+This will create a symbolic link, so any changes you make to the package will be reflected immediately in your test project.
+
+## Publishing the Package to Production
+
+Once you're ready to publish your package to a public or private npm registry, follow these steps:
+
+### 1. Set the Version in `package.json`
+
+Before publishing, ensure the version number in your `package.json` is updated to reflect the current version. Use **semantic versioning** (e.g., `1.0.1` or `2.0.0`).
+
+```json
+{
+  "name": "ndtp-styling-assets",
+  "version": "1.0.1",
+  "main": "dist/css/styles.css",
+  "style": "dist/scss/main.scss",
+  "files": [
+    "dist/css/styles.css",
+    "dist/scss/**/*.scss"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  }
+}
+```
+
+### 2. Log in to npm
+
+Ensure that you are logged in to npm using your account credentials:
+
+```bash
+npm login
+```
+
+### 3. Publish the Package to npm
+
+Publish your package to npm using the following command:
+
+```bash
+npm publish
+```
+
+If you're using a **private registry**, specify the registry URL:
+
+```bash
+npm publish --registry http://your-private-registry-url
+```
+
+This will upload your package to the npm registry, where others can install it.
+
+### 4. Install the Published Package in Other Projects
+
+Once the package is published, you can install it in any project via npm:
+
+```bash
+npm install ndtp-styling-assets
+```
+
+If your package is private, make sure the project is configured to access the private registry.
+
+## Usage
+
+To use this shared CSS/SCSS package in your project, follow these steps:
+
+### 1. Import the CSS
+
+You can directly use the compiled CSS file:
+
+```html
+<link rel="stylesheet" href="node_modules/ndtp-styling-assets/dist/css/styles.css">
+```
+
+This will apply the shared styles (buttons, colors, etc.) across your HTML pages.
+
+### 2. Import the SCSS
+
+Alternatively, you can import the SCSS file for more customization. **We recommend using `@use`** instead of `@import`, as `@import` is deprecated in Sass. The `@use` rule is more efficient and allows you to load stylesheets and control their namespace.
+
+```scss
+@use 'node_modules/ndtp-styling-assets/dist/scss/main.scss';
+```
+
+### 3. Using Namespaces with `@use`
+
+When you use `@use`, all variables, mixins, and functions from the imported SCSS file are scoped to a **namespace** (by default, the namespace is the name of the file). This avoids naming conflicts and keeps your code organized.
+
+For example, after using `@use`, you can access the styles or variables from the shared package like this:
+
+```scss
+.button {
+  background-color: main.$primary-color; /* Use the $primary-color variable from main.scss */
+}
+```
+
+In this example, `main` is the namespace created by `@use`, and `$primary-color` is a variable from the `main.scss` file of the shared package.
+
+### 4. Customize the SCSS
+
+If you import the SCSS into your project, you can override or extend the styles as per your requirements. For instance, you can change the primary color by modifying the `$primary-color` variable **before** the `@use` statement:
+
+```scss
+$primary-color: #ff5733; /* Custom color */
+@use 'node_modules/ndtp-styling-assets/dist/scss/main.scss';
+```
+
+This allows you to apply your custom styling while still leveraging the prebuilt styles from the shared package.
+
+### 5. Using Vite with SCSS
+
+If you're using Vite in your project, you can configure Vite to resolve the SCSS imports from the package folder more easily by adding the following to the `vite.config.js`:
+
+```js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@shared-components': '/node_modules/ndtp-styling-assets/dist/scss'
+    }
+  }
+});
+```
+
+Then, you can import the SCSS like this in your styles:
+
+```scss
+@use '@shared-components/main.scss';
+```
+
+This makes it easier to work with SCSS from the shared package without having to provide the full path each time.
+
+---
+
+### Security
+
+GDS is an advocate of responsible vulnerability disclosure. If you’ve found a vulnerability, we would like to know so we can fix it.
+
+For full details on how to tell us about vulnerabilities, see our security policy.
+
+---
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### Contributors
+
+The development of these works has been made possible with thanks to our [contributors](.github/CONTRIBUTING.md).
+
+---
+### Contributors
+
+The development of these works has been made possible with thanks to our [contributors](https://github.com/National-Digital-Twin/ndtp-styling-assets/graphs/contributors).
