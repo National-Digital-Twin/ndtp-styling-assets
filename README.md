@@ -6,15 +6,13 @@ This project is a SCSS module designed to be easily integrated into external pro
 
 The module follows best practices for modular SCSS architecture, with a well-organized directory structure to support scalability and maintainability. Key features of the module include:
 
-* Global Styles: Reusable base styles, including resets, typography, and form elements, to ensure consistency across various projects.
-* Component Styles: Predefined, reusable styles for common *UI elements like buttons, cards, and form controls.
-* Theming: Centralized theme variables (e.g., color palette, typography settings) to maintain consistent design across projects.
-* Flexibility: Ability to customize and extend styles to meet the unique needs of each project.
-* Build & Bundling: Configured with Vite and Webpack for efficient building and bundling of SCSS files for both local development and production deployment.
+*Global Styles: Reusable base styles, including resets, typography, and form elements, to ensure consistency across various projects.
+*Component Styles: Predefined, reusable styles for common UI elements like buttons, cards, and form controls.
+*Theming: Centralized theme variables (e.g., color palette, typography settings) to maintain consistent design across projects.
+*Flexibility: Ability to customize and extend styles to meet the unique needs of each project.
+*Build & Bundling: Configured with Vite and Webpack for efficient building and bundling of SCSS files for both local development and production deployment.
 
----
-
-This README.md file include instructions for local and production environments, contributing guidelines, and templates for pull requests and issue handling.
+This document includes clear setup instructions for local and production environments, contributing guidelines, and templates for pull requests and issue handling.
 
 By using this SCSS module, developers can easily integrate a consistent set of design elements into their projects, saving time and ensuring a cohesive look and feel across their web applications.
 
@@ -36,7 +34,7 @@ To get started, you will need to install the dependencies for the project. This 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ndtp-styling-assets.git
+   git clone https://github.com/National-Digital-Twin/ndtp-styling-assets
    ```
 
 2. Install dependencies:
@@ -119,7 +117,7 @@ After installing, you can import the CSS or SCSS into your project:
 
 - **Using SCSS:**
   ```scss
-  @use 'node_modules/ndtp-styling-assets/dist/scss/main.scss';
+  @use 'node_modules/ndtp-styling-assets/dist/scss/main.scss' as ndtp;
   ```
 
 Now you can test the changes and confirm that your package works as expected.
@@ -142,18 +140,19 @@ You can also use `npm link` to work with the package directly in development wit
 
 This will create a symbolic link, so any changes you make to the package will be reflected immediately in your test project.
 
+---
 ## Publishing the Package to Production
 
-Once you're ready to publish your package to a public or private npm registry, follow these steps:
+Once you're ready to publish your package to a public or private GitHub repository, follow these steps:
 
 ### 1. Set the Version in `package.json`
 
-Before publishing, ensure the version number in your `package.json` is updated to reflect the current version. Use **semantic versioning** (e.g., `1.0.1` or `2.0.0`).
+Before publishing, ensure the version number in your `package.json` is updated to reflect the current version. Use **semantic versioning** (e.g., `0.0.1`, `1.0.1` or `2.0.0`).
 
 ```json
 {
   "name": "ndtp-styling-assets",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "main": "dist/css/styles.css",
   "style": "dist/scss/main.scss",
   "files": [
@@ -163,47 +162,59 @@ Before publishing, ensure the version number in your `package.json` is updated t
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
 ```
 
-### 2. Log in to npm
+### 2. Authenticate with GitHub Packages
 
-Ensure that you are logged in to npm using your account credentials:
+Ensure that you are authenticated with GitHub Packages. You will need a GitHub token with `write:packages` scope to publish packages.
 
-```bash
-npm login
-```
-
-### 3. Publish the Package to npm
-
-Publish your package to npm using the following command:
+You can log in using the following command:
 
 ```bash
-npm publish
+npm login --registry=https://npm.pkg.github.com --scope=@yourusername
 ```
 
-If you're using a **private registry**, specify the registry URL:
+Replace `yourusername` with your actual GitHub username.
+
+### 3. Publish the Package to GitHub Packages
+
+Publish your package to GitHub Packages using the following command:
 
 ```bash
-npm publish --registry http://your-private-registry-url
+npm publish --registry=https://npm.pkg.github.com
 ```
 
-This will upload your package to the npm registry, where others can install it.
+This will upload your package to GitHub Packages, where others can install it from your GitHub repository.
 
 ### 4. Install the Published Package in Other Projects
 
-Once the package is published, you can install it in any project via npm:
+Once the package is published, you can install it in any project via npm by specifying your GitHub repository:
 
 ```bash
-npm install ndtp-styling-assets
+npm install @yourusername/ndtp-styling-assets
 ```
 
-If your package is private, make sure the project is configured to access the private registry.
+Make sure to replace `yourusername` with your actual GitHub username. If your package is private, ensure the project is configured with the necessary GitHub authentication (e.g., using a GitHub token).
+
+To configure the authentication, you will need to update the `.npmrc` file like this:
+
+```bash
+//.npmrc configuration example
+
+// registry=https://npm.pkg.github.com/
+// //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
+---
 
 ## Usage
 
-To use this shared CSS/SCSS package in your project, follow these steps:
+To use this ndtp-styling-assets package in your project, follow these steps:
 
 ### 1. Import the CSS
 
@@ -231,11 +242,11 @@ For example, after using `@use`, you can access the styles or variables from the
 
 ```scss
 .button {
-  background-color: main.$primary-color; /* Use the $primary-color variable from main.scss */
+  background-color: ndtp.$primary-color; /* Use the $primary-color variable from ndtp.scss */
 }
 ```
 
-In this example, `main` is the namespace created by `@use`, and `$primary-color` is a variable from the `main.scss` file of the shared package.
+In this example, `ndtp` is the namespace created by `@use`, and `$primary-color` is a variable from the `main.scss` file of the shared package.
 
 ### 4. Customize the SCSS
 
