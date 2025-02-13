@@ -6,12 +6,13 @@ This project is a SCSS module designed to be easily integrated into external pro
 
 The module follows best practices for modular SCSS architecture, with a well-organized directory structure to support scalability and maintainability. Key features of the module include:
 
-Global Styles: Reusable base styles, including resets, typography, and form elements, to ensure consistency across various projects.
-Component Styles: Predefined, reusable styles for common UI elements like buttons, cards, and form controls.
-Theming: Centralized theme variables (e.g., color palette, typography settings) to maintain consistent design across projects.
-Flexibility: Ability to customize and extend styles to meet the unique needs of each project.
-Build & Bundling: Configured with Vite and Webpack for efficient building and bundling of SCSS files for both local development and production deployment.
-This project also includes a README.md file with clear setup instructions for local and production environments, contributing guidelines, and templates for pull requests and issue handling.
+* Global Styles: Reusable base styles, including resets, typography, and form elements, to ensure consistency across various projects.
+* Component Styles: Predefined, reusable styles for common UI elements like buttons, cards, and form controls.
+* Theming: Centralized theme variables (e.g., color palette, typography settings) to maintain consistent design across projects.
+* Flexibility: Ability to customize and extend styles to meet the unique needs of each project.
+* Build & Bundling: Configured with Vite and Webpack for efficient building and bundling of SCSS files for both local development and production deployment.
+
+This document includes clear setup instructions for local and production environments, contributing guidelines, and templates for pull requests and issue handling.
 
 By using this SCSS module, developers can easily integrate a consistent set of design elements into their projects, saving time and ensuring a cohesive look and feel across their web applications.
 

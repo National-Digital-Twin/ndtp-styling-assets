@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/css/styles.css",
   "style": "dist/scss/main.scss",
+  "type": "module",
   "files": [
     "dist/css/styles.css",
     "dist/scss/**/*.scss"
