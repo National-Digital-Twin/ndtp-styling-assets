@@ -7,7 +7,9 @@
   "type": "module",
   "files": [
     "dist/css/styles.css",
-    "dist/scss/**/*.scss"
+    "dist/scss/**/*.scss",
+    "dist/assets/*.svg",
+    "dist/assets/*.ico"
   ],
   "exports": {
     ".": {

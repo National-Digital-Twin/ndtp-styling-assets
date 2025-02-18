@@ -1,24 +1,22 @@
 // Base styles
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/utilities';
-
-// Layout styles
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
+@use 'base/typography';
+@forward 'base/typography';
 
 // Component styles
-@import 'components/buttons';
-@import 'components/card';
-@import 'components/navbar';
+@use 'components/button';
+@use 'components/toolbar';
 
 // Theme styles
-@import 'themes/colors';
-@import 'themes/fonts';
+@use 'themes/colors';
 
 // Mixins
-@import 'mixins/mediaQueries';
-@import 'mixins/animations';
+@use 'mixins/mediaQueries';
+
+// forward all imported styles
+@forward 'base/typography';
+@forward 'components/button';
+@forward 'components/toolbar';
+@forward 'themes/colors';
+@forward 'mixins/mediaQueries';
 
 

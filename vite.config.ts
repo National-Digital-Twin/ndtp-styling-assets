@@ -38,6 +38,10 @@ export default defineConfig({
           src: 'scss',  // Match all files in src/scss
           dest: '',  // Copy them into dist/scss
         },
+        {
+          src: 'assets', // Match all files in src/assets
+          dest: '', // Copy them into dist/assets
+        },
       ],
     }),
   ],

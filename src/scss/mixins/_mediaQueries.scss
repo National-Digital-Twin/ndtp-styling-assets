@@ -1,7 +1,6 @@
 /* _mediaQueries.scss */
 @mixin media-query($max-width) {
-    @media (max-width: $max-width) {
-      @content;
-    }
+  @media (max-width: $max-width) {
+    @content;
   }
-  
+}
