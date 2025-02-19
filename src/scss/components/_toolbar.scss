@@ -1,0 +1,27 @@
+@use '../themes/colors' as colors;
+
+$toolbar-height: 56px;
+$logo-width: 5.625rem;
+$logo-height: 1.3125rem;
+$toolbar-font-color: colors.$off-white;
+
+.toolbar-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.toolbar-left-side {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: inherit;
+}
+
+.toolbar-right-side {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
