@@ -10,6 +10,10 @@ You can find a list of existing assets below
 - Deep Navy
 - Off white
 
+## NDTP typography
+
+- font family
+
 ## NDTP Components
 
 ### Button

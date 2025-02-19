@@ -1,7 +1,8 @@
 @use '../themes/colors' as colors;
 
 $toolbar-height: 56px;
-$ndtp-logo-height: 50%;
+$logo-width: 5.625rem;
+$logo-height: 1.3125rem;
 $toolbar-font-color: colors.$off-white;
 
 .toolbar-container {
