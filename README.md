@@ -285,7 +285,11 @@ This makes it easier to work with SCSS from the shared package without having to
 
 ---
 
-### Security
+## Currently existing assets
+
+For a list of currently existing assets please see [CURRENT_ASSETS.md](./CURRENT_ASSETS.md)
+
+## Security
 
 GDS is an advocate of responsible vulnerability disclosure. If you’ve found a vulnerability, we would like to know so we can fix it.
 
@@ -293,17 +297,17 @@ For full details on how to tell us about vulnerabilities, see our security polic
 
 ---
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-### Contributors
+## Contributors
 
 The development of these works has been made possible with thanks to our [contributors](.github/CONTRIBUTING.md).
 
 ---
-### Contributors
+## Contributors
 
 The development of these works has been made possible with thanks to our [contributors](https://github.com/National-Digital-Twin/ndtp-styling-assets/graphs/contributors).
