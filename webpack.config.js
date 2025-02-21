@@ -33,6 +33,10 @@ export default {
           from: 'src/scss',  // Match all files in src/scss and subdirectories
           to: 'scss',  // Copy directly to dist/scss, no additional folder structure
         },
+        {
+          from: 'src/assets',  // Match all files in src/scss and subdirectories
+          to: 'assets',  // Copy directly to dist/scss, no additional folder structure
+        },
       ],
     }),
   ],
