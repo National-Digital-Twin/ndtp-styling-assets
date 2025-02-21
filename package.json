@@ -1,7 +1,17 @@
 {
-  "name": "ndtp-styling-assets",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@national-digital-twin/ndtp-styling-assets",
+  "version": "1.1.0",
+  "description": "A node module containing the shared styling assets for the NDTP demonstrators",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/National-Digital-Twin/ndtp-styling-assets.git"
+  },
+  "author": "NDTP",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/National-Digital-Twin/ndtp-styling-assets/issues"
+  },
+  "homepage": "https://github.com/National-Digital-Twin/ndtp-styling-assets/blob/main/README.md",
   "main": "dist/css/styles.css",
   "style": "dist/scss/main.scss",
   "type": "module",
@@ -42,5 +52,8 @@
     "vite-plugin-static-copy": "^2.2.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
