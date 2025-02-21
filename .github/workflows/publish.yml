@@ -12,13 +12,13 @@ jobs:
     steps:
       # Checkout repository
       - uses: actions/checkout@v4
-      
+
       # Setup Node.js environment
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
-          scope: 'national-digital-twin',
+          scope: 'national-digital-twin'
           token: ${{ secrets.GITHUB_TOKEN }}
       
       # Install dependencies
