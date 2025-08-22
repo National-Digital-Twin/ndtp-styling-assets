@@ -1,4 +1,20 @@
-# ndtp-styling-assets
+# README
+
+**Repository:** `[repository-name]`  
+**Description:** `SCSS module designed to be easily integrated into external projects, such as those built with React, AngularJS, or other front-end frameworks. It provides a consistent set of global NDT styles, mixins, and theme variables, ensuring a streamlined and maintainable design system across multiple applications.`  
+**Repository Status:** `Private – NDTP InnerSource`  
+
+---
+
+## Overview
+
+This repository is part of the **National Digital Twin Programme (NDTP)**. It supports the development of secure, modular, and standards-based components for internal use across NDTP projects.
+
+> **This repository is private and governed by the NDTP InnerSource Licence – Version 1.0.**  
+> It is intended solely for collaboration among NDTP teams and authorised suppliers.  
+> It is **not open source** and must not be disclosed, redistributed, or published externally.
+
+--- 
 
 ## Description
 
@@ -289,25 +305,40 @@ This makes it easier to work with SCSS from the shared package without having to
 
 For a list of currently existing assets please see [CURRENT_ASSETS.md](./CURRENT_ASSETS.md)
 
-## Security
+## Public Funding Acknowledgment  
+This repository has been developed with public funding as part of the National Digital Twin Programme (NDTP), a UK Government initiative. NDTP, alongside its partners, has invested in this work to advance open, secure, and reusable digital twin technologies for any organisation, whether from the public or private sector, irrespective of size.  
 
-GDS is an advocate of responsible vulnerability disclosure. If you’ve found a vulnerability, we would like to know so we can fix it.
+## Licensing
 
-For full details on how to tell us about vulnerabilities, see our security policy.
+This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
 
----
+**NDTP InnerSource Licence – Version 1.0**  
+See [LICENSE.md](LICENSE.md) for the full licence text.
 
-## License
+> ⚠️ This repository is **not open source**.  
+> Redistribution, disclosure, or publication of any part of this repository is prohibited without the **explicit, written approval** of the NDTP Management Team.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+All intellectual property rights are held by the **Department for Business and Trade (UK)** as the governing entity for the National Digital Twin Programme (NDTP).
 
----
+## Security and Responsible Disclosure  
+We take security seriously. If you believe you have found a security vulnerability in this repository, please follow our responsible disclosure process outlined in `SECURITY.md`.  
 
-## Contributors
+## Software Bill of Materials (SBOM)
 
-The development of these works has been made possible with thanks to our [contributors](.github/CONTRIBUTING.md).
+This project provides a Software Bill of Materials (SBOM) to help users and integrators understand its dependencies.
 
----
-## Contributors
+### Current SBOM
+Download the [latest SBOM for this codebase](../../dependency-graph/sbom) to view the current list of components used in this repository.
 
-The development of these works has been made possible with thanks to our [contributors](https://github.com/National-Digital-Twin/ndtp-styling-assets/graphs/contributors).
+## Contributing  
+We welcome contributions that align with the Programme’s objectives. Please read our `CONTRIBUTING.md` guidelines before submitting pull requests.  
+
+## Acknowledgements  
+This repository has benefited from collaboration with various organisations. For a list of acknowledgments, see `ACKNOWLEDGEMENTS.md`.  
+
+## Support and Contact  
+For questions or support, check our Issues or contact the NDTP team on ndtp@businessandtrade.gov.uk.
+
+**Maintained by the National Digital Twin Programme (NDTP).**  
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the governing entity.
