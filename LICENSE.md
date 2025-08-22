@@ -1,6 +1,6 @@
 # NDTP InnerSource License
 
-**Repository:** `[repository-name]`  
+**Repository:** `ndtp-styling-assets`  
 **Description:** `Defines the licensing terms for the source code in this repository.`  
 
 ---

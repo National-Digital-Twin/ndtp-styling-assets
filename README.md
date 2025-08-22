@@ -1,6 +1,6 @@
 # README
 
-**Repository:** `[repository-name]`  
+**Repository:** `ndtp-styling-assets`  
 **Description:** `SCSS module designed to be easily integrated into external projects, such as those built with React, AngularJS, or other front-end frameworks. It provides a consistent set of global NDT styles, mixins, and theme variables, ensuring a streamlined and maintainable design system across multiple applications.`  
 **Repository Status:** `Private – NDTP InnerSource`  
 
