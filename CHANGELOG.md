@@ -2,6 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Tracks all notable changes, version history, and roadmap toward 1.0.0 following Semantic Versioning.`  
+**SPDX-License-Identifier:** OGL-UK-3.0
 
 All notable changes to this repository will be documented in this file.
 
@@ -20,23 +21,7 @@ This project follows **Semantic Versioning (SemVer)** ([semver.org](https://semv
 ## [Unreleased] 
 
 ### Added 
-- **Initial release** of the SCSS module with the following setup:
-  - Reorganized the SCSS directory structure for scalability and modularity.
-  - Migrated **color variables** from the external system (LISA) for testing purposes and consistency across projects. This migration may be further refined in future updates.
-  - Set up core SCSS files:
-    - **_base.scss**: Global reset styles and basic settings.
-    - **_components.scss**: Reusable component styles (e.g., buttons, cards).
-    - **_layout.scss**: Grid systems, flexbox layout styles, and container definitions.
-    - **_mixins.scss**: SCSS mixins for reusable styles (borders, typography, etc.).
-    - **_theme.scss**: Theme variables, including color palette and typography.
-  - Configured **Vite** and **Webpack** for building and bundling the SCSS module (to be finalized after tech discussion).
-  - Added the ability to export the **CSS** and **SCSS module** for use in external projects.
-  - Created a **README.md** with instructions for:
-    - Local and production setup.
-    - Guidelines for contributing.
-    - Pull request template.
-    - Issue handling process.
-    - MIT License for contributions.
+- Placeholder for upcoming features and enhancements. 
 
 ### Fixed 
 - Placeholder for bug fixes and security updates. 
@@ -54,8 +39,6 @@ The `0.90.x` series is part of NDTP’s **pre-stable development cycle**, meanin
 - **Backward compatibility is NOT guaranteed until `1.0.0`**, though NDTP aims to minimise breaking changes. 
 
 Once `1.0.0` is reached, future versions will follow **strict SemVer rules**. 
-
----
 
 ## Versioning Policy 
 
@@ -81,7 +64,5 @@ Once `1.0.0` is reached, future versions will follow **strict SemVer rules**.
 
 © Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the governing entity.
 
-Licensed under the NDTP InnerSource Licence – Version 1.0.
-
-For full licensing terms, see [LICENSE.md](LICENSE.md).
-
+Licensed under the Open Government Licence v3.0.  
+For full licensing terms, see [OGL_LICENSE.md](OGL_LICENSE.md).

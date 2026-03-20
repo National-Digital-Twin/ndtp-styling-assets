@@ -35,9 +35,9 @@
     "clean": "rimraf node_modules package-lock.json",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "vite:dev": "vite",   
+    "vite:dev": "vite",
     "vite:build": "vite build",
-    "vite:preview": "vite preview" 
+    "vite:preview": "vite preview"
   },
   "devDependencies": {
     "chokidar": "^4.0.3",
