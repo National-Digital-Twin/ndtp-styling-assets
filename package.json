@@ -40,18 +40,18 @@
     "vite:preview": "vite preview"
   },
   "devDependencies": {
-    "chokidar": "^4.0.3",
-    "copy-webpack-plugin": "^12.0.2",
-    "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.2",
-    "rimraf": "^6.0.1",
-    "sass": "^1.84.0",
-    "sass-loader": "^16.0.4",
+    "chokidar": "^5.0.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10.1",
+    "rimraf": "^6.1.3",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
     "style-loader": "^4.0.0",
-    "vite": "^6.1.0",
-    "vite-plugin-static-copy": "^2.2.0",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "vite": "^8.0.1",
+    "vite-plugin-static-copy": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
