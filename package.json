@@ -1,0 +1,59 @@
+{
+  "name": "@national-digital-twin/ndtp-styling-assets",
+  "version": "1.1.1",
+  "description": "A node module containing the shared styling assets for the NDTP demonstrators",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/National-Digital-Twin/ndtp-styling-assets.git"
+  },
+  "author": "NDTP",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/National-Digital-Twin/ndtp-styling-assets/issues"
+  },
+  "homepage": "https://github.com/National-Digital-Twin/ndtp-styling-assets/blob/main/README.md",
+  "main": "dist/css/styles.css",
+  "style": "dist/scss/main.scss",
+  "type": "module",
+  "files": [
+    "dist/css/styles.css",
+    "dist/scss/**/*.scss",
+    "dist/assets/*.svg",
+    "dist/assets/*.ico"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/css/styles.css",
+      "require": "./dist/css/styles.css"
+    },
+    "./scss": {
+      "import": "./dist/scss/main.scss",
+      "require": "./dist/scss/main.scss"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf node_modules package-lock.json",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "vite:dev": "vite",
+    "vite:build": "vite build",
+    "vite:preview": "vite preview"
+  },
+  "devDependencies": {
+    "chokidar": "^5.0.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10.1",
+    "rimraf": "^6.1.3",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "vite": "^8.0.1",
+    "vite-plugin-static-copy": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
