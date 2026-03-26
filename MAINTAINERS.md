@@ -2,7 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Lists maintainers responsible for reviewing issues, security, and documentation updates.`  
-**SPDX-License-Identifier:** OGL-UK-3.0
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## Introduction  
 

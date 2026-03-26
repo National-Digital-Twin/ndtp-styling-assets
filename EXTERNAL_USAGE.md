@@ -2,6 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Contains guidance on how to utilize this package in other projects`
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## Usage
 

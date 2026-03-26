@@ -1,7 +1,3 @@
-**Repository:** `ndtp-styling-assets`  
-**Description:** `Details steps and information required to request new features within the software`  
-**SPDX-License-Identifier:** OGL-UK-3.0  
-
 ---
 name: Feature request
 about: Suggest an idea for this project
@@ -22,7 +18,3 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
-
-© Crown Copyright 2026. This work has been developed by the National Digital Twin Programme
-and is legally attributed to the Department for Business and Trade (UK) as the governing entity.
-Licensed under the Open Government Licence v3.0.
