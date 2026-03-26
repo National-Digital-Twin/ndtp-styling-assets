@@ -2,7 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Tracks all notable changes, version history, and roadmap toward 1.0.0 following Semantic Versioning.`  
-**SPDX-License-Identifier:** OGL-UK-3.0
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 All notable changes to this repository will be documented in this file.
 
@@ -21,6 +21,7 @@ This project follows **Semantic Versioning (SemVer)** ([semver.org](https://semv
 ## [0.90.0] 
 
 - Initial public release
+- Maintainer file updates
 
 ---
 

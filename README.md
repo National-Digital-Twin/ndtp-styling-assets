@@ -85,13 +85,11 @@ For guidance on how to integrate this package in another node js project please 
 
 This repository has been developed with public funding as part of the National Digital Twin Programme (NDTP), a UK Government initiative. NDTP, alongside its partners, has invested in this work to advance open, secure, and reusable digital twin technologies for any organisation, whether from the public or private sector, irrespective of size.
 
-## License
-
-This repository contains both source code and documentation, which are covered by different licenses:
-- **Code:** Licensed under the Apache License 2.0.
-- **Documentation:** Licensed under the Open Government Licence v3.0.
-
-See `LICENSE.md`, `OGL_LICENSE.md`, and `NOTICE.md` for details.
+## License  
+This repository contains both source code and documentation, which are covered by different licenses:  
+- **Code:** Originally developed by the National Digital Twin Programme Open-Source Program Office for the National Digital Twin Programme. Licensed under the [Apache License 2.0](./LICENSE.md).  
+- **Documentation:** Licensed under the [Open Government Licence v3.0](./OGL_LICENSE.md).  
+See `LICENSE.md`, `OGL_LICENSE.md`, and `NOTICE.md` for details.  
 
 ## Security and Responsible Disclosure
 
