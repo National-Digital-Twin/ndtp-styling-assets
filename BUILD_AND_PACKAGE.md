@@ -2,6 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Contains details on how to build and package the module`
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## To Run the Production Build
 

@@ -2,6 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Contains a list of existing assets served by the package`
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## NDTP Colors
 
