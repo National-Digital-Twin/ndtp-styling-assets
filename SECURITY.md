@@ -1,8 +1,8 @@
 # Security Policy
 
 **Repository:** `ndtp-styling-assets`  
-**Description:** `Details the responsible disclosure process for security vulnerabilities.`  
-**SPDX-License-Identifier:** OGL-UK-3.0
+**Description:** `Details the responsible disclosure process for security vulnerabilities.  
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## Responsible Disclosure 
 

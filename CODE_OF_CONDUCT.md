@@ -2,7 +2,7 @@
 
 **Repository:** `ndtp-styling-assets`  
 **Description:** `Defines expected behaviors, rules, and the enforcement process to ensure professional engagement.`  
-**SPDX-License-Identifier:** OGL-UK-3.0
+**SPDX-License-Identifier:** `OGL-UK-3.0`  
 
 ## Introduction 
 
